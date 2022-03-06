@@ -260,7 +260,6 @@ public class First extends JFrame {
     }
 }
 
-
 class Data
 {
 
@@ -463,20 +462,18 @@ class Data
     }
 }
 
-class Execute
-{
+class Execute {
 
-    public Execute()
-    {
+    public Execute() {
 
         System.out.println("executed!");
         Object[] options = {"single data", "multiple data"};
-        int n = JOptionPane.showOptionDialog(new JFrame() , "select an option?", "TYPE",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+        int n = JOptionPane.showOptionDialog(new JFrame(), "select an option?", "TYPE", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
 
-        if(n==0){
-            First.S="single data";
-        }else if(n==1){
-            First.S="multiple data";
+        if (n == 0) {
+            First.S = "single data";
+        } else if (n == 1) {
+            First.S = "multiple data";
         }
     }
 
